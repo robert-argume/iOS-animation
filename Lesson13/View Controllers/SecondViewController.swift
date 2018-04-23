@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EndViewController: UIViewController {
+class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,7 @@ class EndViewController: UIViewController {
     }
     
    
+    
     override func viewDidAppear(_ animated: Bool) {
         
     }
@@ -24,7 +25,13 @@ class EndViewController: UIViewController {
         
     }
     
+    @IBAction func BackButton(_ sender: UIButton) {
+        performSegue(withIdentifier: SegueManager.StartView, sender: sender)
+    }
     
+    @IBAction func NextButton(_ sender: UIButton) {
+        performSegue(withIdentifier: SegueManager.EndView, sender: sender)
+    }
 }
 
 

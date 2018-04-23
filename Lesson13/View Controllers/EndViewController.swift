@@ -8,14 +8,14 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
-
+class EndViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-  
+    
+   
     override func viewDidAppear(_ animated: Bool) {
         
     }
@@ -23,5 +23,11 @@ class StartViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
     }
+    
+    @IBAction func BackButton(_ sender: UIButton) {
+        performSegue(withIdentifier: SegueManager.SecondView, sender: sender)
+    }
+    
 }
+
 

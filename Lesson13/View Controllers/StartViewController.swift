@@ -8,15 +8,14 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-    
+class StartViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-   
-    
+
+  
     override func viewDidAppear(_ animated: Bool) {
         
     }
@@ -25,7 +24,8 @@ class SecondViewController: UIViewController {
         
     }
     
-    
+    @IBAction func NextButton(_ sender: UIButton) {
+        performSegue(withIdentifier: SegueManager.SecondView, sender: sender)
+    }
 }
-
 

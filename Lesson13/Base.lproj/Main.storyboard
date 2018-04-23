@@ -22,13 +22,16 @@
                                 <rect key="frame" x="85" y="597" width="204" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="NextButton"/>
+                                <connections>
+                                    <action selector="NextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCU-hl-sPH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="0Pc-1J-fhV" kind="presentation" id="zf9-ja-XcC"/>
+                        <segue destination="0Pc-1J-fhV" kind="presentation" identifier="SecondView" id="zf9-ja-XcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,19 +50,25 @@
                                 <rect key="frame" x="-11" y="583" width="204" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="NextButton"/>
+                                <connections>
+                                    <action selector="NextButton:" destination="0Pc-1J-fhV" eventType="touchUpInside" id="rlz-u5-a8a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-eK-sZ2">
                                 <rect key="frame" x="183" y="583" width="204" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BackButton"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="0Pc-1J-fhV" eventType="touchUpInside" id="kB3-pJ-RTc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vnH-CK-x11"/>
                     </view>
                     <connections>
-                        <segue destination="tnV-Er-meI" kind="presentation" id="t0s-W8-NVY"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="gIU-U6-3vv"/>
+                        <segue destination="tnV-Er-meI" kind="presentation" identifier="EndView" id="t0s-W8-NVY"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="StartView" id="gIU-U6-3vv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sne-FS-Dhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,13 +87,16 @@
                                 <rect key="frame" x="97" y="578" width="204" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BackButton"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="tnV-Er-meI" eventType="touchUpInside" id="wXW-ao-uyB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="k0o-2P-oxy"/>
                     </view>
                     <connections>
-                        <segue destination="0Pc-1J-fhV" kind="presentation" id="c9N-Hv-o65"/>
+                        <segue destination="0Pc-1J-fhV" kind="presentation" identifier="SecondView" id="c9N-Hv-o65"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iw2-ZT-Thm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,6 +109,6 @@
         <image name="NextButton" width="150" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zf9-ja-XcC"/>
+        <segue reference="c9N-Hv-o65"/>
     </inferredMetricsTieBreakers>
 </document>

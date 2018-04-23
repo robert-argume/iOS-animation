@@ -15,6 +15,7 @@
 		E1DDAB1E208E9AB700D2324C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DDAB1D208E9AB700D2324C /* SecondViewController.swift */; };
 		E1DDAB20208E9AD000D2324C /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DDAB1F208E9AD000D2324C /* EndViewController.swift */; };
 		E1DDAB23208E9BA100D2324C /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DDAB22208E9BA100D2324C /* AnimationManager.swift */; };
+		E1DDAB26208EA05600D2324C /* SegueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DDAB25208EA05600D2324C /* SegueManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E1DDAB1D208E9AB700D2324C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E1DDAB1F208E9AD000D2324C /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		E1DDAB22208E9BA100D2324C /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		E1DDAB25208EA05600D2324C /* SegueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				E1DDAB21208E9B9100D2324C /* Managers */,
-				E1DDAB1C208E9A0200D2324C /* New Group */,
+				E1DDAB1C208E9A0200D2324C /* View Controllers */,
 				E1DDAB0A208E99EB00D2324C /* AppDelegate.swift */,
 				E1DDAB0E208E99EB00D2324C /* Main.storyboard */,
 				E1DDAB11208E99EB00D2324C /* Assets.xcassets */,
@@ -71,20 +73,21 @@
 			path = Lesson13;
 			sourceTree = "<group>";
 		};
-		E1DDAB1C208E9A0200D2324C /* New Group */ = {
+		E1DDAB1C208E9A0200D2324C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E1DDAB0C208E99EB00D2324C /* StartViewController.swift */,
 				E1DDAB1D208E9AB700D2324C /* SecondViewController.swift */,
 				E1DDAB1F208E9AD000D2324C /* EndViewController.swift */,
 			);
-			path = "New Group";
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		E1DDAB21208E9B9100D2324C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				E1DDAB22208E9BA100D2324C /* AnimationManager.swift */,
+				E1DDAB25208EA05600D2324C /* SegueManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				E1DDAB0D208E99EB00D2324C /* StartViewController.swift in Sources */,
 				E1DDAB0B208E99EB00D2324C /* AppDelegate.swift in Sources */,
 				E1DDAB23208E9BA100D2324C /* AnimationManager.swift in Sources */,
+				E1DDAB26208EA05600D2324C /* SegueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
